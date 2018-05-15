@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get 'posts/*missing', to: 'posts#missing' #globbing
 
+  get 'query/:else', to: 'pages#else' # query as a route and grab everythat that is typed inside here
+
   root to: 'pages#home' # home page
 
 end
